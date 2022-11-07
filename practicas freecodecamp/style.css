@@ -29,7 +29,7 @@ header {
 
 .centro {
   position: absolute;
-  left: 710px;
+  left: 528px;
 }
 
 /* alineacion de barra de busqueda */
@@ -50,7 +50,7 @@ header {
   font-size: 18px;
   color: white;
   transition: background-color 0.5s ease;
-  width: 510px;
+  width: 360px;
 
   /* icono */
   background: #3b3b4f url(lupa.png);
@@ -184,7 +184,7 @@ header {
 
 /* parte de las cajas */
 .box-container {
-  width: 51%;
+
   display: flex;
   flex-direction: column;
 }
@@ -260,6 +260,8 @@ header {
 }
 
 @media (max-width: 942px) {
+
+  /* navegacion */
   .busqueda {
     display: none;
   }
@@ -272,14 +274,16 @@ header {
     font-size: 23px;
   }
 
+  /* presentacion y frase */
+
   .title h1 {
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 200;
     text-align: center;
   }
 
   .container-title {
-    margin: 0 50px;
+    width: 80%;
   }
 
   .dicho span {
@@ -288,5 +292,24 @@ header {
 
   .dicho cite {
     font-size: 10px;
+  }
+
+  /* box */
+  .box {
+    width: 370px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 376px) {
+
+  .container-title {
+    width: 100%;
+  }
+
+  /* box */
+  .box {
+    width: 276px;
+    font-size: 15px;
   }
 }
