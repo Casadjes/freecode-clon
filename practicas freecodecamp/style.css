@@ -94,6 +94,11 @@ header {
   font-size: 17px;
   margin-right: 10px;
   cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.menu:hover {
+  background-color: #3b3b4f;
 }
 
 /* avatar */
@@ -118,7 +123,7 @@ header {
 
 .section-1 {
   background-color: #1b1b32;
-  padding: 40px 150px;
+  padding: 40px 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -127,7 +132,8 @@ header {
 
 /* container tlt */
 .container-title {
-  margin: 0 400px;
+  margin: 0 700px;
+  width: 38%;
 }
 
 /* titulo section 1 */
@@ -140,6 +146,7 @@ header {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* dicho */
@@ -153,22 +160,133 @@ header {
   font-size: 28px;
 }
 
+.dicho span::before {
+  content: "<<";
+  font-size: 17px;
+}
+
+.dicho span::after {
+  content: ">>";
+  font-size: 17px;
+}
+
 .dicho span {
   text-align: center;
   letter-spacing: 1px;
+  margin-bottom: 6px;
 }
 
 .dicho cite {
-  font-size: 19px;
-  letter-spacing: 0.1em;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 40px;
 }
 
-@media (max-width: 888px) {
+/* parte de las cajas */
+.box-container {
+  width: 51%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-box {
+  display: flex;
+  align-items: center;
+}
+
+.box-container a {
+  text-decoration: none;
+}
+
+.box {
+  border: 3px solid white;
+  height: 80px;
+  margin-bottom: 10px;
+  transition: background-color .5s ease;
+  background-color: #3b3b4f;
+  color: #ffffff;
+  font-size: 23px;
+  width: 750px;
+}
+
+.box:hover {
+  background-color: #ffffff;
+  color: #3b3b4f;
+}
+
+/* caja 1 */
+
+
+.box-1 {
+  display: flex;
+  align-items: center;
+}
+
+.box-1 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+
+.box-2 {
+  display: flex;
+  align-items: center;
+}
+
+.box-2 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.box-2 span {
+  margin-right: 10px;
+}
+
+.box-3 {
+  display: flex;
+  align-items: center;
+}
+
+.box-3 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.box-3 span {
+  margin-right: 10px;
+}
+
+@media (max-width: 942px) {
   .busqueda {
     display: none;
   }
 
   .centro {
     left: 20px;
+  }
+
+  .centro a {
+    font-size: 23px;
+  }
+
+  .title h1 {
+    font-size: 23px;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .container-title {
+    margin: 0 50px;
+  }
+
+  .dicho span {
+    font-size: 15px;
+  }
+
+  .dicho cite {
+    font-size: 10px;
   }
 }
