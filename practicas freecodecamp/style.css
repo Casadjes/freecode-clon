@@ -259,6 +259,61 @@ header {
   margin-right: 10px;
 }
 
+.box-4 {
+  display: flex;
+  align-items: center;
+}
+
+.box-4 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.box-4 span {
+  margin-right: 10px;
+}
+
+.box-5 {
+  display: flex;
+  align-items: center;
+}
+
+.box-5 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.box-5 span {
+  margin-right: 10px;
+}
+
+.box-6 {
+  display: flex;
+  align-items: center;
+}
+
+.box-6 img {
+  width: 60px;
+  height: 60px;
+  margin: 0 15px;
+}
+
+.box-6 span {
+  margin-right: 10px;
+}
+
+/* celular */
+@media (max-width: 376px) {
+
+  .section-1 {
+    padding: 20px 35px;
+  }
+
+}
+
+/* tablet */
 @media (max-width: 942px) {
 
   /* navegacion */
@@ -297,19 +352,6 @@ header {
   /* box */
   .box {
     width: 370px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 376px) {
-
-  .container-title {
-    width: 100%;
-  }
-
-  /* box */
-  .box {
-    width: 276px;
     font-size: 15px;
   }
 }
